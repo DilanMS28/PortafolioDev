@@ -1,15 +1,20 @@
 export default function about(){
     return(
         <div className="about container">
-            <main className="d-flex">
-                <div className="foto">
-                    <img src="" alt=""/>
+            <main className="about d-flex">
+                <div className="foto fotoAbout col-lg-5">
+                    <img src="https://wexpertos.com/media/images/trabajo-desarrollador-web.jpg" alt=""/>
                 </div>
-                <div className="saludo">
-                    <h1>Hey I'm Dilan</h1>
+                <div className="saludo saludoAbout col-lg-7">
+                    <h1>About <span>Me</span></h1>
+                    
                     <p>
-                       A web designer and developer from Costa Rica. I create bespoke websites to help people go further online 
+                    Front-End Developer, I create web pages with UI/UX user interfaces. I have experience 
+                    in the use of multiple technologies and many happy clients with the projects 
                     </p>
+
+                    <a className="btnp" href="#">Contact Me</a>
+
                 </div>
             </main>
         </div>
