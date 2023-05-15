@@ -132,6 +132,38 @@ body{
 }
 
 /* Estilos a la seccion de skills */
-/* .skills{
-    width: ;
-} */
+.skills{
+    margin-top: 3rem;
+    height: 40rem;
+    border-bottom: 1px solid var(--btn);
+}
+
+
+.intro p{
+    color: var(--white);
+}
+
+.list-skills ol{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.list-skills li{
+    background-color: var(--body);
+    border-radius: .5rem;
+    color: var(--white);
+    line-height: 3rem;
+    margin-bottom: .5rem;
+    padding-left: .8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+
+.list-skills ol span{
+    font-weight: 700;
+    color: var(--btn);
+}
