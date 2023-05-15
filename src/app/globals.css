@@ -20,6 +20,7 @@ body{
     padding: .5rem;
     margin: 3rem 0;
     text-decoration: none;
+    text-align: center;
     border-radius: .5rem;
     width: 20rem;
     height: 1rem;
@@ -35,6 +36,9 @@ body{
     height: 6rem;
     background-color: var(--bg1);
     border-bottom:1px solid var(--btn);
+    position: fixed;
+    top:0;
+    width: 100%;
 }
 .navegacion .nav{
     display: inline-flex;
@@ -69,7 +73,7 @@ body{
     height: 40rem;
     display: flex;
     padding: 2rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
     margin-bottom: 3rem;
     border-bottom: 1px solid var(--btn);
 }
@@ -108,7 +112,8 @@ body{
 /* Creacion de la seccion about me */
 .about{
     margin: 3rem 0;
-    height: 40rem;
+    height: 30rem;
+    border-bottom:1px solid var(--btn);
 }
 
 .saludoAbout{
@@ -116,6 +121,17 @@ body{
 }
 
 .fotoAbout img{
-    height: 100%;
+    padding: .5rem;
+    height: 80%;
     width: 100%;
+    object-position: center;
 }
+
+.btn-about{
+    align-items: center;
+}
+
+/* Estilos a la seccion de skills */
+/* .skills{
+    width: ;
+} */

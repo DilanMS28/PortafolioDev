@@ -1,10 +1,9 @@
 export default function skills(){
     return(
-        <div className="container">
-            <h1>Skils</h1>
-
+        <div className="skills container d-flex">
             <div className="intro">
-                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, aliquam? Odit ullam iure voluptatibus consectetur commodi nostrum alias voluptatum laborum omnis. Nisi vel totam veritatis possimus, voluptatum libero delectus eveniet.</h2>
+                <h1>My <span> Skills </span></h1>
+                <p>see fully what skills i have and performed, to develop the projects for you</p>
             </div>
             <div className="list-skills">
                 <ol>
