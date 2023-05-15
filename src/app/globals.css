@@ -1,0 +1,86 @@
+/* Estilos al body en general */
+:root{
+    --bg1: #191D23;
+    --body: #5F6063;
+    --btn: #22e5c8;
+    --gray: #c7c5c9;
+    --verde: #5b7677;
+    --azul: #147ca4;
+    --white: #fff;
+    --font: "Geneva"
+}
+/* estilos al body */
+body{
+    font-family: var(--font);
+}
+
+/* Estilos al nav */
+.navegacion{
+    height: 6rem;
+    background-color: var(--bg1);
+    border-bottom:1px solid var(--btn);
+}
+.navegacion .nav{
+    display: inline-flex;
+    justify-content: right;
+    align-items: center;
+    align-content: right;
+}
+
+.navegacion a{
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.navegacion a:hover{
+    color: var(--btn)
+}
+
+.navegacion a:last-child(){
+    margin-right: 0;
+}
+
+.navegacion .perfil img{
+    padding: .5rem;
+    height: 100%;
+    width: 100%;
+    object-position: center;
+}
+
+/* Estilos a la presentacion */
+.presentacion .main{
+    height: 40rem;
+    display: flex;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.saludo h1{
+    color: var(--white);
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+}
+.saludo p{
+    color: var(--white);
+    font-weight: 400;
+    text-align: center;
+    align-items: center;
+}
+
+.contenedorSaludo{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main{
+    align-content: center;
+}
+
+.foto img{
+    height: 100%;
+    width: 100%;
+}

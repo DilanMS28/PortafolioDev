@@ -11,8 +11,8 @@ export default function Home() {
     <div className= "bg-dark">
       <Nav/>
       <Presentacion/>
-      <About/>
-      <Skills/>
+      {/* <About/> */}
+      {/* <Skills/> */}
 
       
     </div>
