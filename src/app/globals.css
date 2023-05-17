@@ -167,3 +167,40 @@ body{
     font-weight: 700;
     color: var(--btn);
 }
+
+/* Dardole estilos al call to action */
+.action{
+    height: 20rem;
+    width: 100%;
+    background-color: var(--body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.callToAction{
+    text-align: center;
+    margin-top: 2rem;
+}
+.callToAction a{
+    width: 5rem;
+    height: 5rem;
+}
+
+.Paction{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.Paction span{
+    color: var(--btn);
+}
+
+.btnCall{
+    background-color: var(--bg1);
+    
+}
+
+.btnCall:hover{
+    color: var(--btn);
+}
