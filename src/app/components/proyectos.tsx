@@ -17,7 +17,7 @@ export default async function proyectos() {
   return (     
     <div className="proyectos container">      
       <h1 className="proyecto">Projects</h1>
-      
+      <p>{data.name}</p>
     </div>
   )
 }

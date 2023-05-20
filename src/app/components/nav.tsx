@@ -11,9 +11,9 @@ export default function navegacion(){
             <div className="nav col-lg-10">
                 <nav>
                     <a href="/">Home</a>
-                    <a href="/about">About me</a>
+                    <a href="/about">About Me</a>
                     <a href="/contact">Contact</a>
-                    <a href="/Projects">Projects</a>
+                    <a href="/projects">Projects</a>
                 </nav>
             </div>
 
