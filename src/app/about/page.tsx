@@ -15,7 +15,7 @@ export default function about(){
                     in the use of multiple technologies and many happy clients with the projects 
                     </p>
 
-                    <a className="btnp btn-about" href="#">Contact Me</a>
+                    <a className="btnp btn-about" href="https://www.linkedin.com/in/dmsportafolio/">Contact Me</a>
 
                 </div>
             </main>

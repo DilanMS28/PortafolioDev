@@ -5,7 +5,7 @@ export default function skills(){
                 <h1>My <span> Skills </span></h1>
                 <p>See fully what skills i have and performed, to develop the projects for you</p>
             
-                <a className="btnp btn-about" href="#">See Projects</a>
+                <a className="btnp btn-about" href="#projects">See Projects</a>
             </div>
             <div className="list-skills col-lg-6">
                 <ol>

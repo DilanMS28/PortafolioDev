@@ -12,23 +12,23 @@ interface CarruselProps {
 
 const Carrusel = ({ repos }: CarruselProps) => {
     return (
-        <>
-        <h1 className='projct'>Pro<span>jects</span></h1>
-        <Carousel>
-            {repos.map((repo) => (
-                <div key={repo.id}>
-                    <div className='tarjeta'>
-                        <div className="carta container">
-                            <h3><a href={`https://github.com/DilanMS28/${repo.name}`} target="_blank" rel="noopener noreferrer" className='linkRepo'>{repo.name}</a></h3>
+        <section className='seccionproj'>
+            <h1 className='projct'>Pro<span>jects</span></h1>
+            <Carousel>
+                {repos.map((repo) => (
+                    <div key={repo.id}>
+                        <div className='tarjeta'>
+                            <div className="carta container">
+                                <h3><a href={`https://github.com/DilanMS28/${repo.name}`} target="_blank" rel="noopener noreferrer" className='linkRepo'>{repo.name}</a></h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-            ))}
-        </Carousel>
-        </>
+                ))}
+            </Carousel>
+        </section>
     );
 };
 
-export default Carrusel;
+            export default Carrusel;
 
 

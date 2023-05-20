@@ -6,6 +6,7 @@ import Presentation from "./presentation/page"
 import About from "./about/page"
 import Skills from "./components/skills"
 import Call from "./components/call"
+import Nav from "./components/nav"
 import Carousel from "./components/carousel"
 import { use, useEffect, useState } from 'react'
 type Repository = {
@@ -36,10 +37,10 @@ export default function Home() {
 
   return (
     <div className="bg-dark">
-      <main> <Presentation /></main>
-      <section><About /></section>
-      <section><Skills /></section>
-      <section><Call /> </section>
+      <main id='presentacion'> <Presentation /></main>
+      <section id='about'><About /></section>
+      <section className='sectionSkills' id='skills'><Skills /></section>
+      <section id='callaction'><Call /> </section>
 
 
       {/* <div className='Div_PhoProfile'>
@@ -56,9 +57,21 @@ export default function Home() {
           ))}
         </div>
       </div> */}
-      <Carousel repos={repos} />
+      <section id='projects'>
+        <Carousel repos={repos} />
+      </section>
 
-
+      <footer>
+        <div className='container footer'>
+          <nav className='d-block navf'>
+            <a href="#presentacion">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#callaction">Contact</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+          </nav>
+        </div>
+      </footer>
     </div>
   );
 }
