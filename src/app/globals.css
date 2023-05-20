@@ -216,3 +216,42 @@ body{
 .txt{
     color: var(--white);
 }
+
+/* estilos para los proyectos */
+.tarjeta{
+    margin-top: 4rem;
+    height: 10rem;
+}
+
+.projct{
+    margin-top: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--white);
+}
+
+.projct span{
+    color: var(--btn);
+}
+.carta{
+    padding-top: 2rem;
+    width: 2rem;
+    height: 6rem;
+    border-radius: .5rem;
+    background-color: var(--body);
+}
+.carta h3{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.linkRepo{
+    text-decoration: none;
+    color: var(--white);
+}
+.linkRepo:hover{
+    cursor:pointer;
+    color:var(--azul)
+}
