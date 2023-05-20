@@ -8,7 +8,6 @@ type Repository = {
   image_url: string;
   owner : {
     avatar_url : string;
-    url : string;
   }
 
 }
@@ -18,14 +17,7 @@ export default async function proyectos() {
   return (     
     <div className="proyectos container">      
       <h1 className="proyecto">Projects</h1>
-      {/* <h2>{data.name}</h2> */}
-      {/* <Image  
-        src={data.owner.avatar_url}
-        width={500}
-        height={500}
-        alt="Picture of the author"
-      /> */}
-      <p className="txt">{data.name}</p>
+      
     </div>
   )
 }
