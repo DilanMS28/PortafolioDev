@@ -204,3 +204,15 @@ body{
 .btnCall:hover{
     color: var(--btn);
 }
+
+/* darle estilos al proyecto */
+.proyectos{
+    height: 40rem;
+}
+.proyecto{
+    color: var(--white)
+}
+
+.txt{
+    color: var(--white);
+}
