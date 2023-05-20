@@ -1,46 +1,30 @@
-import React, { createContext, useState, useEffect, useContext } from 'react';
-// import Layout from '../components/Layout';
+import Link from "next/link";
+import Image from "next/image";
+import React from "react";
+type Repository = {
+  id: number;
+  name: string;
+  html_url: string;
+  image_url: string;
+  owner : {
+    avatar_url : string;
+  }
+}
 
-// const GitHubContext = createContext();
+async function getData() {
+  const res = await fetch('https://api.github.com/users/DilanMS28/repos');
+  const data: Repository = await res.json();
+  return data;
+}
 
-const useGitHubProjects = () => {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    fetch('https://api.github.com/users/DilanMS28/repos')
-      .then((response) => response.json())
-      .then((data) => {
-        setProjects(data);
-      })
-      .catch((error) => {
-        console.error('Error fetching GitHub projects:', error);
-      });
-  }, []);
-
-  return projects;
-};
+export default async function Page() {
+    const data = await getData();
+  return (     
+    <div className="proyectos container">      
+      <h1 className="proyecto">Projects</h1>
+      <p>{data.name}</p>
+    </div>
+  )
+}
 
 
-
-const Projects = () => {
-  const projects = useGitHubProjects();
-
-  return (
-    <>
-      <h1>Proyectos</h1>
-      {projects.map(({ id, name }) => (
-        <div key={id}>
-          <img src="github.png" alt="GitHub Logo" width="200" height="200" />
-          <h3>
-            Id: {id}
-            <br />
-            Nombre: {name}
-          </h3>
-          <p>Proyecto GitHub</p>
-        </div>
-      ))}
-    </>
-  );
-};
-
-export default Projects;

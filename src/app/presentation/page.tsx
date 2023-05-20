@@ -10,7 +10,7 @@ export default function presentacion() {
                         A Web Designer and Front-End Software Developer from Costa Rica. I create bespoke websites to help people go further online 
                         </p>
 
-                        <a className="btnp" href="#">Let's work together!</a>
+                        <a className="btnp" href="https://www.linkedin.com/in/dmsportafolio/">Let's work together!</a>
 
                         <div className="iconos">
                             <a href=""></a>

@@ -1,14 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react';
+import React from 'react';
 import Nav from "./components/nav"
 import Presentation from "./presentation/page"
 import About from "./about/page"
 import Skills from "./components/skills"
 import Call from "./components/call"
-import Proyectos from "./components/proyectos"
 import Projects from "./projects/page"
-import "bootstrap/dist/css/bootstrap.min.css"; // Import bootstrap CSS
+// import "bootstrap/dist/css/bootstrap.min.css"; // Import bootstrap CSS
 
 export default function Home() {
 
@@ -18,8 +18,7 @@ export default function Home() {
       <About/>
       <Skills/>
       <Call/> 
-      <Proyectos/> 
-      {/* <Projects/> */}
+      <Projects/>
     </div>
   )
 }
