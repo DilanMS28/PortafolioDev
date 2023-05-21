@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function presentacion() {
     return (
         <div className="presentacion container">
@@ -21,7 +22,8 @@ export default function presentacion() {
                 </div>
 
                 <div className="foto col-lg-6">
-                    <img src="https://wexpertos.com/media/images/trabajo-desarrollador-web.jpg" alt=""/>
+                    <Image src="/img/presentacion.jpg" width={800} height={800} alt="Laptop de desarrollo" />
+                    {/* <img src="https://wexpertos.com/media/images/trabajo-desarrollador-web.jpg" alt=""/> */}
                 </div>
             </main>
 
